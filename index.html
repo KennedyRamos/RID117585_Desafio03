@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Board de tarefas</title>
+</head>
+<body>
+    <main class="container">
+        <section class="todo-list">
+            <header class="list-header">
+                <h1>Board de tarefas</h1>
+            </header>
+            <section class="create-todo-section">
+                <form class="create-todo-form">
+                    <input 
+                    type="text" 
+                    id="description" class="todo-input-btn"
+                    placeholder="Nome da tarefa">
+                    
+                    <input 
+                    type="text" 
+                    d="marker" 
+                    class="todo-input-btn"
+                    placeholder="Etiqueta">
+                    
+                    <button 
+                    type="submit" 
+                    id="save-task" aria-label="cadastrar tarefa" class="add-task-btn todo-input-btn">+</button>
+                </form>
+            </section>
+            <section class="todo-list-section">
+                <ul id="todo-list"></ul>
+            </section>
+            <footer id="todo-footer">
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
