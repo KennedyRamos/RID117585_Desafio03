@@ -1,11 +1,11 @@
-.create-todo-section, .create-todo-form{
+.secao-criar-tarefa, .form-criar-tarefa{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     font-family: "Rubik", sans-serif;
 
-    & .create-todo-form > .todo-input-btn{
+    & .form-criar-tarefa > .todo-input-btn{
         height: 3rem;
         font-size: 1.1rem;
         border: 1px solid #EEEEEE;
@@ -13,7 +13,7 @@
         padding: 0 1.5rem;
     }
 
-    & .create-todo-form > .todo-input-btn:last-child{
+    & .form-criar-tarefa > .todo-input-btn:last-child{
         background-color: #2D70FD;
         color: #fff;
     }
