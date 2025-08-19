@@ -1,4 +1,5 @@
 @import url(components/forms.css);
+@import url(components/todo-list.css);
 
 
 *{
@@ -15,7 +16,6 @@
 }
 
 .todo-list{
-    height: 100%;
     padding: 1rem;
     background-color: #fff;
     border-radius: 1rem;

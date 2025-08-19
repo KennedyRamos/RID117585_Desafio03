@@ -1,0 +1,10 @@
+.todo-list-section{
+    margin: 0.8rem 0 1.6rem;
+    min-height: 5rem;
+
+    & > ul {
+        padding-inline-start: 0;
+        height: 23rem;
+        overflow: auto;
+    }
+}
