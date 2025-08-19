@@ -21,7 +21,9 @@
                 <h1>Board de tarefas</h1>
             </header>
             <section class="secao-criar-tarefa">
+                
                 <form class="form-criar-tarefa">
+                    
                     <input 
                     type="text" 
                     id="descricao"
@@ -36,18 +38,24 @@
                     class="todo-input-btn"
                     placeholder="Etiqueta">
                     
-                    <button 
-                    type="submit"
+                    <button
+                    type="button"
                     id="botao-salvar"
-                    aria-label="cadastrar tarefa" class="add-tarefa-btn todo-input-btn">+</button>
+                    aria-label="cadastrar tarefa" class="add-tarefa-btn todo-input-btn"
+                    onclick="adicionarTarefa()">+</button>
                 </form>
             </section>
+            
             <section class="secao-lista-tarefas">
+                
                 <ul id="lista-tarefas" class="lista-tarefas">
                 </ul>
+            
             </section>
+            
             <footer id="rodape-tarefas" class="rodape-tarefas">
             </footer>
+        
         </section>
     </main>
     <script src="assets/js/main.js"></script>
