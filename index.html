@@ -20,12 +20,15 @@
             <header class="list-header">
                 <h1>Board de tarefas</h1>
             </header>
-            <section class="create-todo-section">
-                <form class="create-todo-form">
+            <section class="secao-criar-tarefa">
+                <form class="form-criar-tarefa">
                     <input 
                     type="text" 
-                    id="description" class="todo-input-btn"
-                    placeholder="Nome da tarefa">
+                    id="descricao"
+                    name="descricao"
+                    class="todo-input-btn"
+                    placeholder="Nome da tarefa"
+                    aria-label="Nome da tarefa">
                     
                     <input 
                     type="text" 
@@ -34,17 +37,19 @@
                     placeholder="Etiqueta">
                     
                     <button 
-                    type="submit" 
-                    id="save-task" aria-label="cadastrar tarefa" class="add-task-btn todo-input-btn">+</button>
+                    type="submit"
+                    id="botao-salvar"
+                    aria-label="cadastrar tarefa" class="add-tarefa-btn todo-input-btn">+</button>
                 </form>
             </section>
-            <section class="todo-list-section">
-                <ul id="todo-list" class="todo-list">
+            <section class="secao-lista-tarefas">
+                <ul id="lista-tarefas" class="lista-tarefas">
                 </ul>
             </section>
-            <footer id="todo-footer" class="todo-footer">
+            <footer id="rodape-tarefas" class="rodape-tarefas">
             </footer>
         </section>
     </main>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
