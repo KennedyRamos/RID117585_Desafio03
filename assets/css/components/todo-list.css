@@ -1,0 +1,30 @@
+.todo-list-section{
+    margin: 0.8rem 0 1.6rem;
+    min-height: 5rem;
+
+    & > ul {
+        padding-inline-start: 0;
+        height: 23rem;
+        overflow: auto;
+
+        & > li{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            position: relative;
+            margin-bottom: 2rem;
+            padding: 1rem 1.5rem;
+
+            & > button{
+                background-color: #2D70FD;
+                color: #fff;
+                border: none;
+                margin: auto;
+                padding: 1rem 2rem;
+                font-size: 2rem;
+                border-radius: .5rem;
+                
+            }
+        }
+    }
+}
