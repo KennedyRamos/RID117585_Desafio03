@@ -1,0 +1,35 @@
+li{
+    padding: 1.5rem 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.titulo-tarefa{
+    color: #2D70FD;
+    font-size: 1.1rem;
+}
+
+.etiqueta, .data{
+    color: #B1BACB;
+    margin-right: auto;
+}
+
+.etiqueta{
+    border: 1px solid #B1BACB;
+    padding: .25rem .5rem;
+    border-radius: 1rem;
+}
+
+.btn-concluir{
+    font-size: 1.5rem;
+    background-color: #2D70FD;
+    margin: auto;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    color: #fff;
+}
+
+.icone-check{
+    height: 3rem;
+}

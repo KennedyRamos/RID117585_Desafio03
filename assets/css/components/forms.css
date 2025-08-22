@@ -1,0 +1,20 @@
+.form-criar-tarefa{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0rem;
+    font-family: "Rubik", sans-serif;
+}
+
+.todo-input-btn{
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-color: #eeeeee;
+    border-radius: .5rem;
+}
+
+.todo-input-btn:last-child{
+    background-color: #2D70FD;
+    color: #fff;
+}
