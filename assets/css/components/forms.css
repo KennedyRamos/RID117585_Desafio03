@@ -1,3 +1,7 @@
+.secao-criar-tarefa{
+    width: 100%;
+}
+
 .form-criar-tarefa{
     display: flex;
     flex-direction: column;
@@ -7,6 +11,7 @@
 }
 
 .todo-input-btn{
+    width: 100%;
     padding: 1rem 1.5rem;
     font-size: 1.1rem;
     border: none;
@@ -15,6 +20,13 @@
 }
 
 .todo-input-btn:last-child{
+    width: auto;
     background-color: #2D70FD;
     color: #fff;
+}
+
+@media (min-width: 1024px){
+    .form-criar-tarefa{
+        flex-direction: row;
+    }
 }
