@@ -1,7 +1,17 @@
+li, .divInfo, .divDetalhes{
+    display: grid;
+}
+
+li, .divInfo{
+    gap: 1rem;
+}
+
 li{
     padding: 1.5rem 2rem;
-    display: grid;
-    gap: 1rem;
+}
+
+.divDetalhes{
+    gap: .5rem;
 }
 
 .titulo-tarefa{
@@ -24,7 +34,7 @@ li{
     font-size: 1.5rem;
     background-color: #2D70FD;
     margin: auto;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: .5rem;
     border: none;
     color: #fff;
@@ -32,4 +42,24 @@ li{
 
 .icone-check{
     height: 3rem;
+}
+
+@media (min-width: 1024px){
+    li, .divDetalhes{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        justify-content: space-between;
+    }
+
+    .etiqueta, .data{
+        margin: 0;
+    }
+
+    .btn-concluir{
+        margin: 0;
+    }
 }

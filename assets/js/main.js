@@ -44,6 +44,8 @@ function criarTarefa() {
     const marcador = document.createElement('p');
     const dataCriacao = document.createElement('p');
     const checked = document.createElement('button');
+    const divInfo = document.createElement('div');
+    const divDetalhes = document.createElement('div');
 
     checked.type = 'button'
 
@@ -56,10 +58,17 @@ function criarTarefa() {
     marcador.className = 'etiqueta';
     dataCriacao.className = 'data';
     checked.className = 'btn-concluir';
+    divInfo.className = 'divInfo';
+    divDetalhes.className = 'divDetalhes'
+
+    divInfo.appendChild(titleTarefa);
+    divInfo.appendChild(divDetalhes);
+    divDetalhes.appendChild(marcador);
+    divDetalhes.appendChild(dataCriacao);
 
     checked.addEventListener("click", tarefaConcluida);
 
-    item.append(titleTarefa, marcador, dataCriacao, checked);
+    item.append(divInfo, checked);
     lista.append(item);
 
     document.getElementById('descricao').value = "";
@@ -75,6 +84,8 @@ window.onload = () => {
         const marcador = document.createElement('p');
         const dataCriacao = document.createElement('p');
         const checked = document.createElement('button');
+        const divInfo = document.createElement('div');
+        const divDetalhes = document.createElement('div');
 
         checked.type = 'button'
 
@@ -86,11 +97,18 @@ window.onload = () => {
         titleTarefa.className = 'titulo-tarefa';
         marcador.className = 'etiqueta';
         dataCriacao.className = 'data';
-        checked.className = 'btn-concluir'
+        checked.className = 'btn-concluir';
+        divInfo.className = 'divInfo';
+        divDetalhes.className = 'divDetalhes'
+
+        divInfo.appendChild(titleTarefa);
+        divInfo.appendChild(divDetalhes);
+        divDetalhes.appendChild(marcador);
+        divDetalhes.appendChild(dataCriacao);
 
         checked.addEventListener("click", tarefaConcluida)
 
-        item.append(titleTarefa, marcador, dataCriacao, checked);
+        item.append(divInfo, checked);
         lista.append(item)
     })
 }
